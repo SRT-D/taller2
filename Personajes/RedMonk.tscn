@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cdcb85oxhtjon"]
+
+[ext_resource type="Script" uid="uid://dy8v348hd6scu" path="res://Personajes/RedMonk.cs" id="1_uqsy2"]
+[ext_resource type="Texture2D" uid="uid://bo22n74gkcx73" path="res://Tiny Swords/Units/Red Units/Monk/Idle.png" id="2_klx46"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dh4sk"]
+radius = 15.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xuuhs"]
+atlas = ExtResource("2_klx46")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tlxn3"]
+atlas = ExtResource("2_klx46")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4lh4"]
+atlas = ExtResource("2_klx46")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7v02"]
+atlas = ExtResource("2_klx46")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccxmy"]
+atlas = ExtResource("2_klx46")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rum7q"]
+atlas = ExtResource("2_klx46")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aeav3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xuuhs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tlxn3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g4lh4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7v02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccxmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rum7q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="RedLancer" type="CharacterBody2D" unique_id=418770251]
+script = ExtResource("1_uqsy2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=869147927]
+shape = SubResource("CapsuleShape2D_dh4sk")
+
+[node name="Animator" type="AnimatedSprite2D" parent="." unique_id=678937871]
+scale = Vector2(0.30729166, 0.2942708)
+sprite_frames = SubResource("SpriteFrames_aeav3")
+frame_progress = 0.9051319

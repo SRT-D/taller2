@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c6uff8f1xdojf"]
+
+[ext_resource type="PackedScene" uid="uid://ckaaslsnptpfh" path="res://Personajes/RedLancer.tscn" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://c31utul6jx4qx" path="res://Personajes/PurpleWarrior.tscn" id="2_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://cdcb85oxhtjon" path="res://Personajes/RedMonk.tscn" id="3_tlwt5"]
+
+[node name="World" type="Node2D" unique_id=1146304008]
+
+[node name="RedLancer" parent="." unique_id=418770251 instance=ExtResource("1_fj7yv")]
+position = Vector2(181, -9)
+
+[node name="PurpleWarrior" parent="." unique_id=1989965298 instance=ExtResource("2_tlwt5")]
+position = Vector2(-40, -24)
+
+[node name="Camera2D" type="Camera2D" parent="PurpleWarrior" unique_id=641711413]
+position = Vector2(59, 23)
+offset = Vector2(3, 0)
+zoom = Vector2(3.3, 3.3)
+
+[node name="RedLancer2" parent="." unique_id=1801177734 instance=ExtResource("1_fj7yv")]
+position = Vector2(87, 86)
+
+[node name="RedLancer3" parent="." unique_id=828513681 instance=ExtResource("3_tlwt5")]
+position = Vector2(114, -90)
+
+[node name="RedLancer4" parent="." unique_id=1012853644 instance=ExtResource("3_tlwt5")]
+position = Vector2(-102, 68)

@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://ckaaslsnptpfh"]
+
+[ext_resource type="Script" uid="uid://btqv4sep26vyd" path="res://Personajes/RedLancer.cs" id="1_qfi72"]
+[ext_resource type="Texture2D" uid="uid://cq0jfp3o0e1b6" path="res://Tiny Swords/Units/Red Units/Lancer/Lancer_Idle.png" id="1_tft2o"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dh4sk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfi72"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(0, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gt4bg"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(320, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0pb7"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(640, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vprkc"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(960, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i1cjp"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(1280, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52s0x"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(1600, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nf1u"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(1920, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i5u0l"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(2240, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1trj"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(2560, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3kil"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(2880, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0i72v"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(3200, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5j2g"]
+atlas = ExtResource("1_tft2o")
+region = Rect2(3520, 0, 320, 320)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aeav3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfi72")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gt4bg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0pb7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vprkc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i1cjp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52s0x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nf1u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i5u0l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1trj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3kil")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0i72v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5j2g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="RedLancer" type="CharacterBody2D" unique_id=418770251]
+script = ExtResource("1_qfi72")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=869147927]
+shape = SubResource("CapsuleShape2D_dh4sk")
+
+[node name="Animator" type="AnimatedSprite2D" parent="." unique_id=678937871]
+scale = Vector2(0.30729166, 0.2942708)
+sprite_frames = SubResource("SpriteFrames_aeav3")
+frame_progress = 0.7154147
